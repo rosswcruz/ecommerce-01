@@ -413,36 +413,6 @@ font-weight: bold;
 <span class="unaviablee">Pay via other UPI apps</span></label>
 </div>
 
-</font></h8>
-
-<script>
-function cselect(){
-r1 = document.getElementById('radio1');
-r2 = document.getElementById('radio2');
-r3 = document.getElementById('radio3');
-r4 = document.getElementById('radio4');
-upi = document.getElementById('upilink');
-price = 497;
-if(r1.checked == true) {
-console.log('good 1') ;
-upi.href = "upi8a36.html"+price+"&t=0";
-
-}
-if(r2.checked == true) {
-console.log('good 2') ;
-upi.href = "upi18a36.html"+price+"&t=1";
-}
-if(r3.checked == true) {
-console.log('good 3') ;
-upi.href = "upi28a36.html"+price+"&t=2";
-}
-if(r4.checked == true) {
-console.log('good 4') ;
-upi.href = "#?p="+price;
-}
-}
-</script>
-
 </div>
 </div>
 <div class="card-body">
@@ -485,6 +455,35 @@ Place your Order and Pay
 </div>
 <footer>
 </footer>
+
+<script>
+function cselect(){
+r1 = document.getElementById('radio1');
+r2 = document.getElementById('radio2');
+r3 = document.getElementById('radio3');
+r4 = document.getElementById('radio4');
+upi = document.getElementById('upilink');
+price = 497;
+if(r1.checked == true) {
+console.log('good 1') ;
+upi.href = "upi8a36.html"+price+"&t=0";
+
+}
+if(r2.checked == true) {
+console.log('good 2') ;
+upi.href = "upi18a36.html"+price+"&t=1";
+}
+if(r3.checked == true) {
+console.log('good 3') ;
+upi.href = "upi28a36.html"+price+"&t=2";
+}
+if(r4.checked == true) {
+console.log('good 4') ;
+upi.href = "#?p="+price;
+}
+}
+</script>
+
 <script>
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
@@ -506,7 +505,6 @@ timer = duration;
 
 <script>
 $( document ).ready(function() {
-
 startTimer(900-300, $('#offerend-time'));
 });
 </script>
