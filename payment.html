@@ -397,7 +397,7 @@ font-weight: bold;
 
 <div class="form-check available-method">
 <label class="form-check-label">
-<input type="radio" id="radio1" onclick="cselect()" class="form-check-input" name="optradio" checked>
+<input type="radio" id="radio1" onclick="cselect()" class="form-check-input" name="optradio">
 <span class="unaviablee">Paytm</span>
 </label>
 </div>
@@ -458,7 +458,7 @@ Quantity: 1
 </ul>
 </div>
 <div class="button-container flex">
-<a class="common-button" id="upilink" href="upi18a36.html">
+<a class="common-button" id="upilink" href="javascript:void(0);">
 Place your Order and Pay
 </a>
 </div>
@@ -494,9 +494,9 @@ upi.href = "upi8a36.html";
 
 <script>
 var el = document.getElementById("upilink"); if (el.addEventListener) { el.addEventListener("click", function() {
-document.querySelector("input").checked = false; document.getElementById("upilink").href = "javascript:void(0)";
+document.querySelector("input").checked = false;
 }, false); } else { el.attachEvent("onclick", function() {
-document.querySelector("input").checked = false; document.getElementById("upilink").href = "javascript:void(0)";
+document.querySelector("input").checked = false;
 }); }
 </script>
 
