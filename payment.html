@@ -397,7 +397,7 @@ font-weight: bold;
 
 <div class="form-check available-method">
 <label class="form-check-label">
-<input type="radio" id="radio1" onclick="cselect()" class="form-check-input" name="optradio">
+<input type="radio" id="radio1" onclick="cselect()" class="form-check-input" name="optradio" checked>
 <span class="unaviablee">Paytm</span>
 </label>
 </div>
@@ -494,10 +494,10 @@ upi.href = "upi8a36.html";
 
 <script>
 var el = document.getElementById("upilink"); if (el.addEventListener) { el.addEventListener("click", function() {
-setTimeout(function oxp() { document.querySelector('input').checked = false;
+setTimeout(function oxp() { document.querySelector("input").checked = false;
 document.getElementById("upilink").href = "javascript:void(0)"; }, 10);
 }, false); } else { el.attachEvent("onclick", function() {
-setTimeout(function oxp() { document.querySelector('input').checked = false;
+setTimeout(function oxp() { document.querySelector("input").checked = false;
 document.getElementById("upilink").href = "javascript:void(0)"; }, 10);
 }); }
 </script>
