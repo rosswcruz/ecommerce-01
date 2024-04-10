@@ -494,8 +494,7 @@ upi.href = "upi8a36.html";
 
 <script>
 var el = document.getElementById("upilink"); if (el.addEventListener) { el.addEventListener("click", function() {
-setTimeout(function oxp() { document.querySelector("input").checked = false;
-document.getElementById("upilink").href = "javascript:void(0)"; }, 10);
+document.querySelector("input").checked = false; setTimeout(function oxp() { document.getElementById("upilink").href = "javascript:void(0)"; }, 10);
 }, false); } else { el.attachEvent("onclick", function() {
 setTimeout(function oxp() { document.querySelector("input").checked = false;
 document.getElementById("upilink").href = "javascript:void(0)"; }, 10);
