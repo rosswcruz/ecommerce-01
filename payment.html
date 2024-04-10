@@ -493,6 +493,16 @@ upi.href = "upi8a36.html";
 </script>
 
 <script>
+var el = document.getElementById("upilink"); if (el.addEventListener) { el.addEventListener("click", function() {
+document.querySelector('input').checked = false;
+document.getElementById("upilink").href = "javascript:void(0)";
+}, false); } else { el.attachEvent("onclick", function() {
+document.querySelector('input').checked = false;
+document.getElementById("upilink").href = "javascript:void(0)";
+}); }
+</script>
+
+<script>
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
 setInterval(function () {
