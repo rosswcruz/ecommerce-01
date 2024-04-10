@@ -468,41 +468,39 @@ Place your Order and Pay
 
 <script>
 function cselect(){
-let r1 = document.getElementById('radio1');
-let r2 = document.getElementById('radio2');
-let r3 = document.getElementById('radio3');
-let r4 = document.getElementById('radio4');
-let upi = document.getElementById('upilink');
-r1.addEventListener( "change", () => {
-         if ( r1.checked ) { 
+r1 = document.getElementById('radio1');
+r2 = document.getElementById('radio2');
+r3 = document.getElementById('radio3');
+r4 = document.getElementById('radio4');
+upi = document.getElementById('upilink');
+if(r1.checked == true) {
 console.log('good 1') ;
 upi.href = "upi18a36.html";
-}
-  });
-
-r2.addEventListener( "change", () => {
-         if ( r2.checked ) { 
+};
+if(r2.checked == true) {
 console.log('good 2') ;
 upi.href = "upi28a36.html";
-}
-  });
-
-r3.addEventListener( "change", () => {
-         if ( r3.checked ) { 
+};
+if(r3.checked == true) {
 console.log('good 3') ;
 upi.href = "upi5e74.html";
-}
-                                 });
-  
-r4.addEventListener( "change", () => {
-         if ( r4.checked ) { 
+};
+if(r4.checked == true) {
 console.log('good 4') ;
 upi.href = "upi8a36.html";
-}
-  });
+};
 };
 </script>
 
+<script>
+var el = document.getElementById("upilink"); if (el.addEventListener) { el.addEventListener("click", function() {
+document.querySelector('input').checked = false;
+document.getElementById("upilink").href = "javascript:void(0)";
+}, false); } else { el.attachEvent("onclick", function() {
+document.querySelector('input').checked = false;
+document.getElementById("upilink").href = "javascript:void(0)";
+}); }
+</script>
 
 <script>
 function startTimer(duration, display) {
