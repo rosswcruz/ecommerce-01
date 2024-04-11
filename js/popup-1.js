@@ -983,15 +983,15 @@ for( var i = 0; i < modalArrays.length; i++) {
 
 
 
+if(sessionStorage["click"]) { window.history.forward(); } else { };
+
+
+
 window.onpageshow = function(event) {
 if (event.persisted) {
 window.scrollTo(0, 0);
 window.location.reload();
 }; };
-
-
-
-if(sessionStorage["click"]) { window.history.forward(); } else { };
 
 
 
