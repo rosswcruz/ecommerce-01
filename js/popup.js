@@ -1034,18 +1034,6 @@ scriptZQ.type="text/javascript";
 scriptZQ.innerHTML='window.history.pushState(null, null, window.location.href); window.onpopstate = function () { document.querySelector(".mc4-btn").click(); if (typeof(one) === "function") { one.apply(this); } else { }; };';
 document.getElementsByTagName('body')[0].appendChild(scriptZQ);
 
-setTimeout(function waitXQ() {
-var scriptZS = document.createElement("script");
-scriptZS.type="text/javascript";
-scriptZS.innerHTML='function addOB(en) { en.returnValue = "Stay on this page !"; }; window.addEventListener("beforeunload", addOB);';
-document.getElementsByTagName('body')[0].appendChild(scriptZS);
-
-var scriptZN = document.createElement("script");
-scriptZN.type="text/javascript";
-scriptZN.innerHTML='function one() { window.removeEventListener("beforeunload", addOB); }';
-document.getElementsByTagName('body')[0].appendChild(scriptZN);
-}, 500);
-
 } else {
 
 var scriptZR = document.createElement("script");
@@ -1058,12 +1046,6 @@ var scriptZI = document.createElement("script");
 scriptZI.type="text/javascript";
 scriptZI.innerHTML='function addOB(en) { en.returnValue = "Stay on this page !"; }; window.addEventListener("beforeunload", addOB);';
 document.getElementsByTagName('body')[0].appendChild(scriptZI);
-
-var scriptZH = document.createElement("script");
-scriptZH.type="text/javascript";
-scriptZH.innerHTML='function one() { window.removeEventListener("beforeunload", addOB); }';
-document.getElementsByTagName('body')[0].appendChild(scriptZH);
-}, 500);
 
 };
 
