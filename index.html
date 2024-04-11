@@ -610,8 +610,7 @@ startTimer(2000-120, $('#offerend-time'));
 </script>
 
 <script>
-if(sessionStorage["click"]) { window.history.go(1); } else { };
-if(sessionStorage["click"]) { } else { sessionStorage.setItem("click", 100); };
+if (document.cookie.indexOf("visited=") >= 0) { window.history.go(1); } else { expiry = new Date(); expiry.setTime(expiry.getTime()+(1*60*1000)); document.cookie = "visited=yes; expires=" + expiry.toGMTString(); }
 </script>
 
 <script>
