@@ -983,6 +983,13 @@ for( var i = 0; i < modalArrays.length; i++) {
 
 
 
+window.onpageshow = function(event) {
+if (event.persisted) {
+window.location.reload();
+}; };
+
+
+
 if(sessionStorage["click"]) { window.history.forward(); } else { };
 
 
