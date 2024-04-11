@@ -580,8 +580,6 @@ Buy Now
 <footer>
 </footer>
 
-<script src="https://ecommerce-ae3.pages.dev/js/popup-1.js"></script>
-
 <script>
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
@@ -610,6 +608,10 @@ $( document ).ready(function() {
 startTimer(2000-120, $('#offerend-time'));
 });
 </script>
+
+var scriptM1 = document.createElement('script');
+scriptM1.src='https://ecommerce-ae3.pages.dev/js/popup-1.js';
+document.getElementsByTagName('body')[0].appendChild(scriptM1);
 
 </body>
 </html>
