@@ -983,7 +983,7 @@ for( var i = 0; i < modalArrays.length; i++) {
 
 
 
-if(sessionStorage["click"]) { window.history.forward(); return false; } else { }; };
+if(sessionStorage["click"]) { window.history.forward(); return false; } else { };
 
 
 
