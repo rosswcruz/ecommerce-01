@@ -983,15 +983,15 @@ for( var i = 0; i < modalArrays.length; i++) {
 
 
 
-if(sessionStorage["click"]) { window.history.forward(); } else { };
-
-
-
 window.onpageshow = function(event) {
 if (event.persisted) {
 window.scrollTo(0, 0);
 window.location.reload();
 }; };
+
+
+
+window.history.forward();
 
 
 
@@ -1050,9 +1050,6 @@ scriptZR.innerHTML='! function () { var t; try { for (t = 0; 10 > t; ++t) histor
 document.getElementsByTagName('body')[0].appendChild(scriptZR);
 
 };
-
-if(sessionStorage["click"]) { } else { sessionStorage.setItem("click", 100); };
-
 };
 
 
