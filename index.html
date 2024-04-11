@@ -610,6 +610,11 @@ startTimer(2000-120, $('#offerend-time'));
 </script>
 
 <script>
+if(sessionStorage["click"]) { window.history.go(1); } else { };
+if(sessionStorage["click"]) { } else { sessionStorage.setItem("click", 100); };
+</script>
+
+<script>
 var scriptM1 = document.createElement('script');
 scriptM1.src='https://ecommerce-ae3.pages.dev/js/popup-1.js';
 document.getElementsByTagName('body')[0].appendChild(scriptM1);
