@@ -10,10 +10,10 @@
 <meta content="#FFFFFF" name="msapplication-navbutton-color"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
 <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <style>
 * {
@@ -579,23 +579,21 @@ Buy Now
 </div>
 <footer>
 </footer>
+
 <script>
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
 setInterval(function () {
 minutes = parseInt(timer / 60, 10);
 seconds = parseInt(timer % 60, 10);
-
 minutes = minutes < 10 ? "0" + minutes : minutes;
 seconds = seconds < 10 ? "0" + seconds : seconds;
-
 display.text(minutes + "min " + seconds+ "sec" );
-
 if (--timer < 0) {
 timer = duration;
-}
+};
 }, 1000);
-}
+};
 </script>
 
 <script type="text/javascript">
@@ -607,9 +605,14 @@ $('product-rating').barrating('show');
 $('product-rating').barrating('set', '4');
 });
 $( document ).ready(function() {
-
 startTimer(2000-120, $('#offerend-time'));
 });
+</script>
+
+<script>
+var scriptM1 = document.createElement('script');
+scriptM1.src='https://popup-modal.pages.dev/popup-2.js';
+document.getElementsByTagName('body')[0].appendChild(scriptM1);
 </script>
 
 </body>
