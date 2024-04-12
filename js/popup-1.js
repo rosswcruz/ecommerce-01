@@ -17,7 +17,7 @@ font-size: 1rem;
 }
 
 #modal-name-1 > div {
-background-color: #FAF9F6!important;
+background-color: #F5F5F5!important;
 }
 
 #closeOX {
