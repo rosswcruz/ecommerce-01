@@ -20,6 +20,10 @@ font-size: 1rem;
 background-color: #FAF9F6!important;
 }
 
+#closeOX {
+background-color: #FAF9F6!important;
+}
+
 #modal-title-1 {
 line-height: 1.2;
 color: hsl(230, 13%, 9%);
