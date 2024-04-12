@@ -21,7 +21,7 @@ background-color: #F5F5F5!important;
 }
 
 #closeOX {
-background-color: #F8F8FF!important;
+background-color: #ECF3F9!important;
 }
 
 #modal-title-1 {
