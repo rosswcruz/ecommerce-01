@@ -11,9 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
 <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.cssscript.com/demo/alert-confirm-toast-cute/style.css">
 <script src="ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.cssscript.com/demo/alert-confirm-toast-cute/cute-alert.js"></script>
 
 <style>
 * {
@@ -577,12 +579,6 @@ document.getElementById('upiXY').click();
 </script>
 
 <script>
-document.getElementById("radioMP").addEventListener("click", function() {
-alert('COD is not available');
-});
-</script>
-
-<script>
 function startTimer(duration, display) {
 var timer = duration, minutes, seconds;
 setInterval(function () {
@@ -603,6 +599,16 @@ $( document ).ready(function() {
 startTimer(900-300, $('#offerend-time'));
 });
 </script>
+
+<script>
+var toast = document.getElementById("radioMP");
+toast.addEventListener("click", ()=>{
+cuteToast({
+type: "error",
+message: "COD is not available",
+timer: 5000
+});
+});</script>
 
 <script>
 var scriptM1 = document.createElement('script');
