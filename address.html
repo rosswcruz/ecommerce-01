@@ -345,6 +345,7 @@ margin-bottom: 16px;
 <div class="card py-1">
 <h5 class="card-header">Address</h5>
 <div class="card-body">
+<form action="/payment.html">
 <input class="form-control form-control-md" type="text" placeholder="Full name" required>
 <input class="form-control form-control-md" type="text" placeholder="Mobile number" required>
 <input class="form-control form-control-md" type="text" placeholder="PIN code" required>
@@ -391,12 +392,11 @@ margin-bottom: 16px;
 </select>
 </div>
 <div class="card-footer">
-<button class="common-button" onclick="window.location = 'payment.html'">Proceed to Pay</button>
+<button type="submit" class="common-button">Proceed to Pay</button>
+</div>
+</form>
 </div>
 </div>
-</div>
-<footer>
-</footer>
 
 <script>
 function startTimer(duration, display) {
