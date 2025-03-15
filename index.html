@@ -28,7 +28,13 @@ overflow-x: hidden;
 html {
 width: 100%;
 overflow-x: hidden;
+color-scheme: light;
 }
+@media (prefers-color-scheme: dark) {
+html {
+background-color: white;
+color: black;
+}}
 .carousel-indicators li {
 width: 10px;
 height: 10px;
