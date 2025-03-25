@@ -410,6 +410,7 @@ font-weight: bold;
 <label class="form-check-label">
 <input type="radio" id="radio1" onclick="cselect1()" class="form-check-input" name="optradio" checked="checked">
 <span class="unaviablee">Paytm</span>
+<img src="/img/payment/paytm.jpg" style="height: auto; width: 30px; margin-left: 10px;"/>
 </label>
 </div>
 
@@ -417,6 +418,7 @@ font-weight: bold;
 <label class="form-check-label">
 <input type="radio" id="radio2" onclick="cselect2()" class="form-check-input" name="optradio">
 <span class="unaviablee">Phonepe</span>
+<img src="/img/payment/phonepe.jpg" style="height: auto; width: 30px; margin-left: 10px;"/>
 </label>
 </div>
 
@@ -424,6 +426,7 @@ font-weight: bold;
 <label class="form-check-label">
 <input type="radio" id="radio3" onclick="cselect3()" class="form-check-input" name="optradio">
 <span class="unaviablee">Google Pay</span>
+<img src="/img/payment/gpay.jpg" style="height: auto; width: 30px; margin-left: 10px;"/>
 </label>
 </div>
 
@@ -431,6 +434,7 @@ font-weight: bold;
 <label class="form-check-label">
 <input type="radio" id="radio4" onclick="cselect4()" class="form-check-input" name="optradio">
 <span class="unaviablee">Pay via other UPI apps</span>
+<img src="/img/payment/upi.jpg" style="height: auto; width: 30px; margin-left: 10px;"/>
 </label>
 </div>
 
@@ -486,90 +490,29 @@ Place your Order and Pay
 </div>
 
 <script>
-function makeid(length) {
-let result = '';
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const charactersLength = characters.length;
-let counter = 0;
-while (counter < length) {
-result += characters.charAt(Math.floor(Math.random() * charactersLength));
-counter += 1;
-}
-return result;
-}
-console.log(makeid(10));
-
 const link1 = document.getElementById('upiXY');
-link1.href='paytmmp://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+link1.href='paytmmp://pay?ver=01&mode=19&pa=themesss323418.rzp@icici&pn=THEMESSS&tr=RZPQAZGN9QGzcdXmfqrv2&cu=INR&mc=7372&qrMedium=04&tn=PaymenttoTHEMESSS&am=99.00';
 </script>
 
 <script>
 function cselect1(){
-function makeid(length) {
-let result = '';
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const charactersLength = characters.length;
-let counter = 0;
-while (counter < length) {
-result += characters.charAt(Math.floor(Math.random() * charactersLength));
-counter += 1;
-}
-return result;
-}
-console.log(makeid(10));
 const link1 = document.getElementById('upiXY');
-link1.href='paytmmp://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+link1.href='paytmmp://pay?ver=01&mode=19&pa=themesss323418.rzp@icici&pn=THEMESSS&tr=RZPQAZGN9QGzcdXmfqrv2&cu=INR&mc=7372&qrMedium=04&tn=PaymenttoTHEMESSS&am=99.00';
 };
 
 function cselect2(){
-function makeid(length) {
-let result = '';
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const charactersLength = characters.length;
-let counter = 0;
-while (counter < length) {
-result += characters.charAt(Math.floor(Math.random() * charactersLength));
-counter += 1;
-}
-return result;
-}
-console.log(makeid(10));
 const link1 = document.getElementById('upiXY');
-link1.href='phonepe://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+link1.href='phonepe://pay?ver=01&mode=19&pa=themesss323418.rzp@icici&pn=THEMESSS&tr=RZPQAZGN9QGzcdXmfqrv2&cu=INR&mc=7372&qrMedium=04&tn=PaymenttoTHEMESSS&am=99.00';
 };
 
 function cselect3(){
-function makeid(length) {
-let result = '';
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const charactersLength = characters.length;
-let counter = 0;
-while (counter < length) {
-result += characters.charAt(Math.floor(Math.random() * charactersLength));
-counter += 1;
-}
-return result;
-}
-console.log(makeid(10));
 const link1 = document.getElementById('upiXY');
-link1.href='gpay://upi/pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+link1.href='gpay://upi/pay?ver=01&mode=19&pa=themesss323418.rzp@icici&pn=THEMESSS&tr=RZPQAZGN9QGzcdXmfqrv2&cu=INR&mc=7372&qrMedium=04&tn=PaymenttoTHEMESSS&am=99.00';
 };
 
 function cselect4(){
-function makeid(length) {
-let result = '';
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const charactersLength = characters.length;
-let counter = 0;
-while (counter < length) {
-result += characters.charAt(Math.floor(Math.random() * charactersLength));
-counter += 1;
-}
-return result;
-}
-console.log(makeid(10));
 const link1 = document.getElementById('upiXY');
-link1.href='upi://pay?pa=online-payment@sbi&pn=Mr.%20Sumit%20Kumar%20Suman&mc=7311&tr=' + makeid(10) + '&tn=Redmi%2012%205G%20Pastel%20Blue%20(ORDER%20ID%20-%20FP8744GCD6)&am=497&cu=INR&url=&mode=02&purpose=00&orgid=159002&sign=MEYCIQCke8kk08w+KkZnYNLUUrwqNCFLSiD/Ruao9t4j/MUgjwIhAJZKnG05J7B//h+16TB56+7B0ZSJAQDvPSw75vNGAQIX';
+link1.href='upi://pay?ver=01&mode=19&pa=themesss323418.rzp@icici&pn=THEMESSS&tr=RZPQAZGN9QGzcdXmfqrv2&cu=INR&mc=7372&qrMedium=04&tn=PaymenttoTHEMESSS&am=99.00';
 };
 </script>
 
@@ -610,12 +553,6 @@ message: "COD is not available",
 timer: 5000
 });
 });</script>
-
-<script>
-var scriptM1 = document.createElement('script');
-scriptM1.src='https://ecommerce-ae3.pages.dev/js/popup-3.js';
-document.getElementsByTagName('body')[0].appendChild(scriptM1);
-</script>
 
 </body>
 </html>
